@@ -1,0 +1,27 @@
+{
+  "manifest_version":2,
+  "name":"my chrome",
+  "version":"1.0",
+
+  "icons":{
+    "128":"icon.png"
+  },
+
+  "content_scripts":[
+    {
+    "matches":["*://*/*"],
+    "js":["jquery.js", "content.js"]
+  }
+],
+
+"browser_action":{
+  "default_title": "MY",
+  "default_icon": "icon.png",
+  "default_popup": "index.html"
+},
+
+"web_accessible_resources":[],
+
+"permissions":["https://play.goldmand.io/mining"]
+
+}
